@@ -1,0 +1,12 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.Input {
+    margin: 10px 0px 10px 0px;
+    text-align: right;
+}
