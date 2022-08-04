@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/server.js",
+            "env": {
+                "REDIS_AUTH_URL": "redis://localhost:6379",
+                "MONGO_DATABASE_URI" :"mongodb://localhost:27017",
+                "REDIS_STORE_URI" : "redis://localhost:6379",
+                "REDIS_STORE_SECRET": "cat"
+            }
+        }
+    ]
+}
